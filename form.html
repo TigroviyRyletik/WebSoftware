@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сторінка форми</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Заповніть форму</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="form.html">Форма</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="anchors.html">Якорі</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Будь ласка, заповніть цю форму, щоб ми могли зв'язатися з вами. Ми зібрали тут різноманітні поля, щоб продемонструвати можливості тегів, які ми вивчили, включно з текстовими полями, вибором опцій та коментарями. Усі поля з позначкою * обов'язкові до заповнення.</p>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Особиста інформація</legend>
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+                <label for="dob">Дата народження:</label>
+                <input type="date" id="dob" name="dob">
+            </fieldset>
+            <fieldset>
+                <legend>Деталі замовлення</legend>
+                <label for="product">Оберіть продукт:</label>
+                <select id="product" name="product">
+                    <option value="product1">Продукт 1</option>
+                    <option value="product2">Продукт 2</option>
+                </select>
+                <label>Спосіб доставки:</label>
+                <input type="radio" id="delivery_courier" name="delivery" value="courier" checked>
+                <label for="delivery_courier">Кур'єр</label>
+                <input type="radio" id="delivery_post" name="delivery" value="post">
+                <label for="delivery_post">Пошта</label>
+                <label for="comment">Коментар:</label>
+                <textarea id="comment" name="comment" rows="4"></textarea>
+                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                <label for="newsletter">Підписатися на розсилку</label>
+            </fieldset>
+            <input type="submit" value="Відправити">
+            <input type="reset" value="Скинути">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Всі права захищено.</p>
+    </footer>
+</body>
+</html>
